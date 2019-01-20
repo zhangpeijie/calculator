@@ -1,0 +1,100 @@
+@import "reset.wxss";
+
+page {
+  font: 100 14px 'Roboto';
+}
+
+.calculator {
+  width: 100%;
+  height: 100vh;
+  background: rgb(196, 243, 225);
+  position: relative;
+  box-shadow: 0px 0px 20px 0px #aaa;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.calculator-display {
+  background: #d0eed6;
+  flex: 1;
+}
+
+/*TODO:解决文本垂直居中问题*/
+.calculator-display-text {
+  padding: 0 30px;
+  font-size: 6em;
+  color: rgb(115, 155, 20);
+  text-align: right;
+}
+
+.calculator-keypad {
+  display: flex;
+}
+
+.calculator .function-keys {
+  display: flex;
+}
+
+.calculator .digit-keys {
+  background:179, 238, 208;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.calculator-key-hover {
+  box-shadow: inset 0px 0px 25vw 0px rgba(114, 231, 188, 0.25);
+}
+
+.calculator-key {
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  line-height: 25vw;
+  border-top: 1px solid rgb(16, 95, 36);
+  border-right: 1px solid rgb(27, 26, 26);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.calculator .function-keys .calculator-key {
+  font-size: 2em;
+}
+
+.calculator .digit-keys .calculator-key {
+  font-size: 2.25em;
+}
+
+.calculator .digit-keys .key-0 {
+  width: 50vw;
+  text-align: left;
+  padding-left: 9vw;
+}
+
+.calculator .digit-keys .key-dot {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
+
+.calculator .operator-keys .calculator-key {
+  color: white;
+  border-right: 0;
+  font-size: 3em;
+}
+
+.calculator .function-keys {
+  background: linear-gradient(to bottom, rgb(51, 168, 80) 0%, rgb(29, 207, 118) 100%);
+}
+
+.calculator .operator-keys {
+  background:  linear-gradient(to bottom, rgb(51, 168, 80) 0%, rgb(29, 207, 118) 100%);
+}
+
+.input-keys {
+  width: 75%;
+}
+
+.operator-keys {
+  width: 25%;
+}

@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/logs/logs",
+    "pages/wxml/index",
+    "pages/index/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "绿绿的计算器",
+    "navigationBarTextStyle":"black"
+  }
+}
